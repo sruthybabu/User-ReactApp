@@ -242,14 +242,23 @@ const Viewuser = () => {
                     {userlist.map((value,key)=>{
                         return <div className='col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4'>
                             <div class="card" >
- 
-  <div class="card-body">
-      <h1 className="card-id">{value.id}</h1>
+<center>                            <img style={{width:250,height:250}} src="https://www.nicepng.com/png/detail/503-5032252_shamim-amiri-blank-female-avatar-icon.png" class="card-img-top" alt="..."/>
+</center>  <div class="card-body">
+      
     <h5 class="card-title">{value.name}</h5>
     <p class="card-text">Username:{value.username}</p>
     <p class="card-text">Email:{value.email}</p>
+    <p class="card-text">Address:{value.address.street}</p>
+    <p class="card-text">Suite:{value.address.suite}</p>
+    <p class="card-text">City:{value.address.city}</p>
+    <p class="card-text">Zipcode:{value.address.zipcode}</p>
+    <p class="card-text">Lat:{value.address.geo.lat}</p>
+    <p class="card-text">Lng:{value.address.geo.lng}</p>
     <p class="card-text">Phone:{value.phone}</p>
     <p class="card-text">Website:{value.website}</p>
+    <p class="card-text">Company:{value.company.name}</p>
+    <p class="card-text">CatchPhrase{value.company.catchPhrase}</p>
+    <p class="card-text">Bs{value.company.catchPhrase}</p>
     
   </div>
 </div>
